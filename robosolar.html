@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Robô Solar 6 em 1 | Pequeno Inventor</title>
+    
+    <!-- COLE SEU PIXEL DO FACEBOOK AQUI (Logo acima do /head) -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'], 
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#00C4CC',
+                            pink: '#FF3366',
+                            yellow: '#FFD166',
+                            purple: '#8338EC',
+                            dark: '#1B1B3A',
+                            light: '#F8F9FA',
+                            green: '#00D166',
+                            orange: '#FF7F11'
+                        }
+                    },
+                    boxShadow: {
+                        'brutal': '4px 4px 0px 0px rgba(27, 27, 58, 1)',
+                        'brutal-lg': '8px 8px 0px 0px rgba(27, 27, 58, 1)',
+                        'brutal-hover': '2px 2px 0px 0px rgba(27, 27, 58, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-brutal { transition: all 0.2s ease; }
+        .hover-brutal:hover { transform: translate(-4px, -4px); box-shadow: 8px 8px 0px 0px rgba(27, 27, 58, 1); }
+        .hover-brutal:active { transform: translate(0px, 0px); box-shadow: 0px 0px 0px 0px rgba(27, 27, 58, 1); }
+        
+        .bg-polka {
+            background-color: #F8F9FA;
+            background-image: radial-gradient(#FFD166 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-polka text-brand-dark font-sans antialiased pb-24 md:pb-0">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-orange text-white text-xs md:text-sm text-center py-2 px-4 font-bold tracking-wide">
+        ☀️ APRENDIZADO MOVIDO A LUZ SOLAR! Oferta Especial por Tempo Limitado ☀️
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white border-b-4 border-brand-dark sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-yellow p-2 rounded-xl border-2 border-brand-dark transform -rotate-6">
+                    <i data-lucide="sun" class="text-brand-dark w-6 h-6"></i>
+                </div>
+                <span class="font-black text-xl md:text-2xl tracking-tight text-brand-dark uppercase">Pequeno<span class="text-brand-orange">Inventor</span></span>
+            </div>
+            
+            <a href="#comprar" class="bg-brand-green text-white font-black py-2 px-6 rounded-full border-2 border-brand-dark shadow-brutal hover-brutal flex items-center gap-2">
+                Comprar <span class="hidden md:inline">Agora</span> <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-10 md:py-16 overflow-hidden relative">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+            
+            <!-- Imagem do Produto Principal -->
+            <div class="w-full md:w-1/2 relative">
+                <!-- Círculo de Fundo -->
+                <div class="absolute inset-0 bg-brand-yellow rounded-full transform scale-90 translate-x-4 translate-y-4 border-4 border-brand-dark"></div>
+                <!-- Imagem (Substituir pelo arquivo real) -->
+                <img src="robo-solar-1.jpg" alt="Kit Robô Solar 6 em 1" class="relative z-10 w-full h-[350px] md:h-[500px] object-cover bg-white rounded-3xl border-4 border-brand-dark shadow-brutal-lg transform -rotate-2 hover:rotate-0 transition-transform duration-300" onerror="this.src='https://placehold.co/600x600/FFD166/1B1B3A?text=Foto+Robô+Solar'">
+                
+                <!-- Badge -->
+                <div class="absolute -top-4 -right-4 bg-brand-pink p-4 rounded-full border-4 border-brand-dark shadow-brutal z-20 animate-bounce">
+                    <span class="font-black text-white text-lg leading-none block text-center">6 em 1!<br><span class="text-xs">Uau!</span></span>
+                </div>
+            </div>
+
+            <!-- Texto de Venda -->
+            <div class="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left relative z-10">
+                <div class="inline-block bg-brand-cyan text-brand-dark font-black px-4 py-1.5 rounded-full text-sm md:text-base self-center md:self-start border-2 border-brand-dark shadow-[2px_2px_0_0_#1B1B3A] transform -rotate-1">
+                    Para Jovens Inventores (10+ anos) 🤖
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-black leading-tight uppercase">
+                    Kit Robô Solar 6 em 1:<br>
+                    <span class="text-brand-orange">A Força do Sol</span> nas Suas Mãos!
+                </h1>
+                
+                <p class="text-lg font-bold text-gray-700">
+                    Construa 6 modelos de veículos e robôs impressionantes e veja a mágica acontecer: eles andam e se movem usando apenas a energia do sol. <span class="text-brand-pink font-black">Zero pilhas. Pura ciência!</span>
+                </p>
+
+                <!-- Preço e Botão CTA -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-dark shadow-brutal mt-2 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 opacity-10"><i data-lucide="sun" class="w-40 h-40"></i></div>
+                    
+                    <p class="text-sm text-gray-500 font-bold mb-1 uppercase">Oferta de lançamento:</p>
+                    <div class="flex items-end justify-center md:justify-start gap-2 mb-4">
+                        <p class="text-xl text-gray-400 font-bold line-through mb-1">R$ 180,00</p>
+                        <p class="text-4xl font-black text-brand-dark">R$ 120,00</p>
+                    </div>
+                    
+                    <a href="COLE_O_LINK_DA_NUVEMSHOP_AQUI" class="relative z-10 w-full bg-brand-orange text-white font-black text-xl py-4 rounded-xl border-4 border-brand-dark shadow-brutal hover-brutal text-center flex items-center justify-center gap-2">
+                        COMPRAR MEU ROBÔ SOLAR <i data-lucide="zap" class="w-6 h-6"></i>
+                    </a>
+                    <p class="text-xs text-center text-gray-500 font-bold mt-3">🔒 Compra segura. Satisfação garantida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Sem Pilhas (Dor do Cliente) -->
+    <section class="py-12 bg-brand-cyan border-y-4 border-brand-dark text-brand-dark">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-brand-dark shadow-brutal transform rotate-6">
+                <i data-lucide="battery-charging" class="w-10 h-10 text-brand-pink"></i>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black uppercase mb-6">NUNCA MAIS COMPRE PILHAS! 🔋🚫</h2>
+            <p class="text-xl font-bold leading-relaxed max-w-2xl mx-auto text-gray-800">
+                Esqueça a frustração do brinquedo parar de funcionar no meio da diversão. Equipado com um <span class="bg-brand-yellow px-2 font-black border-2 border-brand-dark transform -rotate-1 inline-block">painel solar de alta eficiência</span>, este kit ensina conceitos vitais de energia renovável e sustentabilidade na prática.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features: 6 Modelos em 1 -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-brand-purple text-white font-black px-4 py-1.5 rounded-full text-sm mb-4 border-2 border-brand-dark shadow-[2px_2px_0_0_#1B1B3A]">
+                    Um único kit, infinitas possibilidades
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black text-brand-dark uppercase">6 Brinquedos em 1 Só! 🚁🚗⛵</h2>
+                <p class="text-lg font-bold text-gray-600 mt-4 max-w-2xl mx-auto">Sempre que a criança enjoar de um modelo, basta desmontar e construir um totalmente novo. A diversão se renova!</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Modelo 1 -->
+                <div class="bg-brand-light p-4 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] text-center">
+                    <img src="robo-solar-2.jpg" alt="Robô Solar" class="w-full h-32 object-cover rounded-xl border-2 border-brand-dark mb-4" onerror="this.src='https://placehold.co/400x300/FF7F11/ffffff?text=Robô'">
+                    <h3 class="font-black text-lg">Cão Robô</h3>
+                </div>
+                <!-- Modelo 2 -->
+                <div class="bg-brand-light p-4 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] text-center">
+                    <img src="robo-solar-3.jpg" alt="Carro Solar" class="w-full h-32 object-cover rounded-xl border-2 border-brand-dark mb-4" onerror="this.src='https://placehold.co/400x300/00C4CC/ffffff?text=Carro'">
+                    <h3 class="font-black text-lg">Carro Solar</h3>
+                </div>
+                <!-- Modelo 3 -->
+                <div class="bg-brand-light p-4 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] text-center">
+                    <img src="robo-solar-4.jpg" alt="Barco Solar" class="w-full h-32 object-cover rounded-xl border-2 border-brand-dark mb-4" onerror="this.src='https://placehold.co/400x300/FF3366/ffffff?text=Barco'">
+                    <h3 class="font-black text-lg">Barco Flutuante</h3>
+                </div>
+                <!-- Modelo 4 -->
+                <div class="bg-brand-light p-4 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] text-center">
+                    <img src="robo-solar-5.jpg" alt="Moinho Solar" class="w-full h-32 object-cover rounded-xl border-2 border-brand-dark mb-4" onerror="this.src='https://placehold.co/400x300/FFD166/1B1B3A?text=Moinho'">
+                    <h3 class="font-black text-lg">Moinho de Vento</h3>
+                </div>
+                <!-- Modelo 5 -->
+                <div class="bg-brand-light p-4 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] text-center">
+                    <img src="robo-solar-6.jpg" alt="Avião Solar" class="w-full h-32 object-cover rounded-xl border-2 border-brand-dark mb-4" onerror="this.src='https://placehold.co/400x300/8338EC/ffffff?text=Avião'">
+                    <h3 class="font-black text-lg">Avião Solar</h3>
+                </div>
+                <!-- Modelo 6 -->
+                <div class="bg-brand-light p-4 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] text-center">
+                    <img src="robo-solar-7.jpg" alt="Avião Rotativo" class="w-full h-32 object-cover rounded-xl border-2 border-brand-dark mb-4" onerror="this.src='https://placehold.co/400x300/00D166/ffffff?text=Avião+Rotativo'">
+                    <h3 class="font-black text-lg">Avião Rotativo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Pedagógicos e Especificações -->
+    <section class="py-16 bg-brand-dark text-white">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- Benefícios -->
+            <div>
+                <h2 class="text-3xl font-black uppercase mb-8 text-brand-yellow">Mais que Diversão: Educação STEM</h2>
+                <p class="font-bold mb-6 text-gray-300 text-lg">Transforme o tempo livre do seu filho em uma verdadeira aula prática de engenharia. O kit estimula:</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="brain-circuit" class="w-6 h-6 text-brand-orange"></i> Raciocínio Lógico e Resolução de Problemas.
+                    </li>
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="leaf" class="w-6 h-6 text-brand-green"></i> Conscientização sobre Energia Renovável.
+                    </li>
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="hammer" class="w-6 h-6 text-brand-cyan"></i> Coordenação motora fina na montagem.
+                    </li>
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="graduation-cap" class="w-6 h-6 text-brand-pink"></i> Interesse profundo por ciência e tecnologia.
+                    </li>
+                </ul>
+                
+                <p class="mt-8 text-brand-cyan font-bold italic">"Ideal para jovens a partir de 10 anos que adoram desafios criativos."</p>
+            </div>
+
+            <!-- Especificações -->
+            <div class="bg-white text-brand-dark p-8 rounded-3xl border-4 border-brand-orange shadow-brutal transform md:-rotate-2">
+                <h2 class="text-2xl font-black uppercase mb-6 flex items-center gap-2">
+                    <i data-lucide="package-search" class="w-8 h-8 text-brand-dark"></i> Ficha Técnica
+                </h2>
+                
+                <div class="space-y-3 font-bold text-gray-700 mb-6 text-sm">
+                    <p class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-brand-green shrink-0"></i> 1 Painel de Energia Solar de Alta Qualidade</p>
+                    <p class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-brand-green shrink-0"></i> Micro-motor DC integrado</p>
+                    <p class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-brand-green shrink-0"></i> Cartelas com todas as peças para montagem</p>
+                    <p class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-brand-green shrink-0"></i> Manual ilustrado para os 6 modelos</p>
+                </div>
+
+                <div class="bg-brand-light p-4 rounded-xl border-2 border-gray-300">
+                    <h3 class="font-black text-brand-dark mb-2 text-sm uppercase">Tamanhos (Após montado):</h3>
+                    <ul class="text-xs font-bold text-gray-600 grid grid-cols-2 gap-2">
+                        <li>🚗 Carro: 6,9 x 4,9cm</li>
+                        <li>🤖 Robô: 6,6 x 6,5cm</li>
+                        <li>⛵ Barco: 12,2 x 7,6cm</li>
+                        <li>✈️ Avião: 15,1 x 8,9cm</li>
+                        <li>🪁 Moinho: 19,5 x 14,9cm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section id="comprar" class="py-20 text-center px-4 relative overflow-hidden">
+        <div class="absolute top-10 left-10 text-brand-yellow opacity-20"><i data-lucide="sun" class="w-32 h-32 animate-[spin_10s_linear_infinite]"></i></div>
+        <div class="absolute bottom-10 right-10 text-brand-cyan opacity-20"><i data-lucide="settings" class="w-32 h-32 animate-[spin_12s_linear_infinite_reverse]"></i></div>
+
+        <h2 class="text-3xl md:text-5xl font-black text-brand-dark uppercase mb-6 relative z-10">Desperte o <span class="text-brand-orange">Engenheiro</span> do Futuro!</h2>
+        <p class="text-xl font-bold text-gray-600 mb-10 max-w-2xl mx-auto relative z-10">Garanta o Kit 6 em 1 agora e incentive a descoberta através da melhor brincadeira possível.</p>
+        
+        <a href="https://nuvem.com.br/checkout/v3/start/2009333513/4b4170a2d9a771bbe51bc5d45289a77cea70db34?from_store=1&country=BR&internalProviders=true&_gl=1*1hh2a8x*_ga*MTU4ODUwODk3MC4xNzgzMDE0MjU0*_ga_8D7SGGT72L*czE3ODMwMTQyNTQkbzEkZzEkdDE3ODMwMTU5MzQkajYwJGwwJGgw&tn_session=1e1474fc0379d6e11c4a0bf39f6cead101b1b2d8~db35d21ec8edcec26a431f70b3d4c60154cbdfc2" class="relative z-10 inline-flex bg-brand-green text-white font-black text-2xl py-5 px-12 rounded-2xl border-4 border-brand-dark shadow-brutal hover-brutal items-center justify-center gap-3 hover:scale-105 transition-transform duration-200">
+            COMPRAR AGORA - R$ 120 <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t-8 border-brand-orange text-center">
+        <div class="flex items-center justify-center gap-2 mb-4">
+            <i data-lucide="sun" class="text-brand-yellow w-6 h-6"></i>
+            <span class="font-black text-xl tracking-tight uppercase">Pequeno<span class="text-brand-orange">Inventor</span></span>
+        </div>
+        <p class="text-gray-400 font-bold text-sm">Transformando a curiosidade natural em paixão por aprender.</p>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-xs text-gray-500 font-bold uppercase tracking-wider">
+            &copy; 2026 Pequeno Inventor. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão de Compra Fixo (Apenas Mobile) -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t-4 border-brand-dark p-4 z-50 shadow-[0_-4px_0_0_rgba(27,27,58,1)]">
+        <a href="https://nuvem.com.br/checkout/v3/start/2009333513/4b4170a2d9a771bbe51bc5d45289a77cea70db34?from_store=1&country=BR&internalProviders=true&_gl=1*1hh2a8x*_ga*MTU4ODUwODk3MC4xNzgzMDE0MjU0*_ga_8D7SGGT72L*czE3ODMwMTQyNTQkbzEkZzEkdDE3ODMwMTU5MzQkajYwJGwwJGgw&tn_session=1e1474fc0379d6e11c4a0bf39f6cead101b1b2d8~db35d21ec8edcec26a431f70b3d4c60154cbdfc2" class="w-full bg-brand-orange text-white font-black text-lg py-3 rounded-xl border-4 border-brand-dark shadow-brutal flex items-center justify-center gap-2 active:translate-y-1 active:translate-x-1 active:shadow-none">
+            GARANTIR O MEU AGORA <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+    </div>
+
+    <script>
+        // Iniciar ícones
+        lucide.createIcons();
+    </script>
+</body>
+</html>
