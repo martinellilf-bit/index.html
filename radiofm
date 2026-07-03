@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit DIY Rádio FM | Pequeno Inventor</title>
+    
+    <!-- COLE SEU PIXEL DO FACEBOOK AQUI (Logo acima do /head) -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'], 
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#00C4CC',
+                            pink: '#FF3366',
+                            yellow: '#FFD166',
+                            purple: '#8338EC',
+                            dark: '#1B1B3A',
+                            light: '#F8F9FA',
+                            green: '#00D166'
+                        }
+                    },
+                    boxShadow: {
+                        'brutal': '4px 4px 0px 0px rgba(27, 27, 58, 1)',
+                        'brutal-lg': '8px 8px 0px 0px rgba(27, 27, 58, 1)',
+                        'brutal-hover': '2px 2px 0px 0px rgba(27, 27, 58, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-brutal { transition: all 0.2s ease; }
+        .hover-brutal:hover { transform: translate(-4px, -4px); box-shadow: 8px 8px 0px 0px rgba(27, 27, 58, 1); }
+        .hover-brutal:active { transform: translate(0px, 0px); box-shadow: 0px 0px 0px 0px rgba(27, 27, 58, 1); }
+        
+        .bg-polka {
+            background-color: #F8F9FA;
+            background-image: radial-gradient(#00C4CC 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-polka text-brand-dark font-sans antialiased pb-24 md:pb-0">
+
+    <!-- Top Bar Oferta -->
+    <div class="bg-brand-pink text-white text-xs md:text-sm text-center py-2 px-4 font-bold tracking-wide animate-pulse">
+        ⚡ OFERTA RELÂMPAGO: De R$ 160 por apenas R$ 145! ⚡
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white border-b-4 border-brand-dark sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-yellow p-2 rounded-xl border-2 border-brand-dark transform -rotate-6">
+                    <i data-lucide="radio" class="text-brand-dark w-6 h-6"></i>
+                </div>
+                <span class="font-black text-xl md:text-2xl tracking-tight text-brand-dark uppercase">Pequeno<span class="text-brand-cyan">Inventor</span></span>
+            </div>
+            
+            <a href="#comprar" class="bg-brand-green text-white font-black py-2 px-6 rounded-full border-2 border-brand-dark shadow-brutal hover-brutal flex items-center gap-2">
+                Comprar <span class="hidden md:inline">Agora</span> <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-10 md:py-16 overflow-hidden relative">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+            
+            <!-- Imagem do Produto Principal (Rádio Montado) -->
+            <div class="w-full md:w-1/2 relative">
+                <!-- Círculo de Fundo -->
+                <div class="absolute inset-0 bg-brand-cyan rounded-full transform scale-90 translate-x-4 translate-y-4 border-4 border-brand-dark"></div>
+                <!-- Imagem -->
+                <img src="sg-11134201-7rdy7-lz9yak4qd46a3f.jpg" alt="Kit Rádio FM de Madeira" class="relative z-10 w-full h-[350px] md:h-[500px] object-cover bg-white rounded-3xl border-4 border-brand-dark shadow-brutal-lg transform -rotate-2 hover:rotate-0 transition-transform duration-300" onerror="this.src='https://placehold.co/600x600/00C4CC/1B1B3A?text=Rádio+Montado'">
+                
+                <!-- Badge de Desconto -->
+                <div class="absolute -top-4 -right-4 bg-brand-yellow p-4 rounded-full border-4 border-brand-dark shadow-brutal z-20 animate-bounce text-center">
+                    <span class="font-black text-brand-dark text-xl leading-none block">R$ 145</span>
+                    <span class="text-xs font-bold line-through text-gray-500">R$ 160</span>
+                </div>
+            </div>
+
+            <!-- Texto de Venda -->
+            <div class="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left relative z-10">
+                <div class="inline-block bg-brand-purple text-white font-black px-4 py-1.5 rounded-full text-sm md:text-base self-center md:self-start border-2 border-brand-dark shadow-[2px_2px_0_0_#1B1B3A] transform -rotate-1">
+                    Crianças 6+ Anos 🎧
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-black leading-tight uppercase">
+                    Kit DIY Rádio FM:<br>
+                    <span class="text-brand-pink">A Magia da Eletrônica</span> na Palma da Mão!
+                </h1>
+                
+                <p class="text-lg font-bold text-gray-700">
+                    Você já imaginou a sensação de construir algo com as próprias mãos e, de repente, ouvir música saindo daquilo que você criou? Uma jornada incrível pelo universo do som!
+                </p>
+
+                <!-- Preço e Botão CTA -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-dark shadow-brutal mt-2">
+                    <p class="text-sm text-gray-500 font-bold mb-1 uppercase">Preço especial de lançamento:</p>
+                    <div class="flex items-end justify-center md:justify-start gap-3 mb-4">
+                        <p class="text-2xl text-gray-400 font-bold line-through mb-1">R$ 160,00</p>
+                        <p class="text-5xl font-black text-brand-dark">R$ 145<span class="text-2xl">,00</span></p>
+                    </div>
+                    
+                    <a href="https://nuvem.com.br/checkout/v3/start/2009333513/4b4170a2d9a771bbe51bc5d45289a77cea70db34?from_store=1&country=BR&internalProviders=true&_gl=1*hl7mnb*_ga*MTU4ODUwODk3MC4xNzgzMDE0MjU0*_ga_8D7SGGT72L*czE3ODMwODc1NDIkbzIkZzEkdDE3ODMwODgzMDQkajQ4JGwwJGgw&tn_session=33dd1dfc07a1d594bc8c666d0eac443919f9be0c~f76571e96a4ad3fe595660d8ad09d3fe971ceb56" class="w-full bg-brand-green text-white font-black text-xl py-4 rounded-xl border-4 border-brand-dark shadow-brutal hover-brutal text-center flex items-center justify-center gap-2">
+                        GARANTIR O MEU COM DESCONTO <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                    </a>
+                    <p class="text-xs text-center text-gray-500 font-bold mt-3">🔒 Pagamento 100% Seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Segurança (Sem Solda) -->
+    <section class="py-12 bg-brand-purple border-y-4 border-brand-dark text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="w-20 h-20 bg-brand-yellow rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-brand-dark shadow-brutal transform rotate-6">
+                <i data-lucide="zap-off" class="w-10 h-10 text-brand-dark"></i>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black uppercase mb-6">🚫 ESQUEÇA O FERRO DE SOLDA!</h2>
+            <p class="text-xl font-bold leading-relaxed max-w-2xl mx-auto">
+                Nosso kit foi desenvolvido com um sistema inteligente de encaixe. <span class="text-brand-yellow">Não precisa de solda nem ferramentas perigosas.</span> É 100% seguro: cada componente se conecta facilmente, garantindo uma atividade divertida que estimula o foco sem riscos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features: Um Rádio que Funciona -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-black text-center text-brand-dark uppercase mb-12">Um Rádio que Funciona de Verdade 📻</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-brand-light p-6 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] flex items-start gap-4">
+                    <div class="bg-brand-cyan p-3 rounded-xl border-2 border-brand-dark"><i data-lucide="radio-receiver" class="w-8 h-8 text-white"></i></div>
+                    <div>
+                        <h3 class="font-black text-xl mb-1">Sintonizador Real</h3>
+                        <p class="font-bold text-gray-600">Capta as melhores frequências FM da sua região.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brand-light p-6 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] flex items-start gap-4">
+                    <div class="bg-brand-pink p-3 rounded-xl border-2 border-brand-dark"><i data-lucide="lightbulb" class="w-8 h-8 text-white"></i></div>
+                    <div>
+                        <h3 class="font-black text-xl mb-1">Indicador de Energia</h3>
+                        <p class="font-bold text-gray-600">Luz LED para você nunca ficar no escuro (ou esquecer ligado).</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brand-light p-6 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] flex items-start gap-4">
+                    <div class="bg-brand-yellow p-3 rounded-xl border-2 border-brand-dark"><i data-lucide="signal-high" class="w-8 h-8 text-brand-dark"></i></div>
+                    <div>
+                        <h3 class="font-black text-xl mb-1">Antena Retrátil</h3>
+                        <p class="font-bold text-gray-600">Visual clássico e profissional para buscar o sinal com clareza.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-brand-light p-6 rounded-3xl border-4 border-brand-dark shadow-[4px_4px_0_0_#1B1B3A] flex items-start gap-4">
+                    <div class="bg-brand-purple p-3 rounded-xl border-2 border-brand-dark"><i data-lucide="volume-2" class="w-8 h-8 text-white"></i></div>
+                    <div>
+                        <h3 class="font-black text-xl mb-1">Controle de Volume</h3>
+                        <p class="font-bold text-gray-600">Botões fáceis e seguros, perfeitos para as mãozinhas das crianças.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios e O que vem na caixa -->
+    <section class="py-16 bg-brand-dark text-white">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Aprendizado -->
+            <div>
+                <h2 class="text-3xl font-black uppercase mb-8 text-brand-cyan">Presente Único e Educativo 🎁</h2>
+                <p class="font-bold mb-6 text-gray-300 text-lg">Este kit é a escolha perfeita para tirar as crianças das telas e promover um desenvolvimento real:</p>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="brain" class="w-6 h-6 text-brand-pink shrink-0"></i> Estimula a imaginação e o raciocínio lógico.
+                    </li>
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="timer" class="w-6 h-6 text-brand-yellow shrink-0"></i> Promove a prática da paciência e do "flow" ao montar.
+                    </li>
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="cpu" class="w-6 h-6 text-brand-cyan shrink-0"></i> Introduz conceitos de física e tecnologia de forma prática.
+                    </li>
+                    <li class="flex items-center gap-3 font-bold text-lg">
+                        <i data-lucide="users" class="w-6 h-6 text-brand-purple shrink-0"></i> Pais e filhos montarem juntos (tempo de qualidade!).
+                    </li>
+                </ul>
+            </div>
+
+            <!-- O que vem na caixa (Com a nova Imagem) -->
+            <div class="bg-white text-brand-dark p-6 md:p-8 rounded-3xl border-4 border-brand-yellow shadow-brutal transform lg:rotate-2">
+                <h2 class="text-2xl font-black uppercase mb-6 flex items-center gap-2">
+                    <i data-lucide="package-open" class="w-8 h-8 text-brand-pink"></i> O que vem na caixa:
+                </h2>
+                
+                <!-- Imagem das peças -->
+                <img src="sg-11134201-7rdxe-lz9yap9iw3k609.jpg" alt="Peças do Kit Rádio FM" class="w-full h-auto rounded-xl border-2 border-brand-dark mb-6 shadow-sm" onerror="this.src='https://placehold.co/600x400/FFD166/1B1B3A?text=Peças'">
+                
+                <ul class="space-y-2 font-bold text-gray-700 mb-6 text-sm md:text-base">
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i> Componentes eletrônicos pré-montados (módulos)</li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i> Antena retrátil e Alto-falante</li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i> Estrutura do rádio em Madeira de encaixe</li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i> Chave Philips, Parafusos e Compartimento de Pilha</li>
+                    <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-green shrink-0 mt-0.5"></i> Manual ilustrado passo a passo</li>
+                </ul>
+
+                <div class="bg-gray-100 p-4 rounded-xl border-2 border-gray-300 flex items-center gap-3">
+                    <i data-lucide="battery-medium" class="w-8 h-8 text-gray-500"></i>
+                    <p class="font-bold text-sm text-gray-600"><strong>ENERGIA:</strong> Funciona com 2 pilhas AA (não inclusas).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section id="comprar" class="py-20 text-center px-4">
+        <h2 class="text-3xl md:text-5xl font-black text-brand-dark uppercase mb-6">Pronto para ouvir a <span class="text-brand-pink">Magia?</span></h2>
+        <p class="text-xl font-bold text-gray-600 mb-10 max-w-2xl mx-auto">Transforme o aprendizado em uma experiência memorável! Adquira agora e veja o talento do seu pequeno cientista despertar.</p>
+        
+        <a href="https://nuvem.com.br/checkout/v3/start/2009333513/4b4170a2d9a771bbe51bc5d45289a77cea70db34?from_store=1&country=BR&internalProviders=true&_gl=1*hl7mnb*_ga*MTU4ODUwODk3MC4xNzgzMDE0MjU0*_ga_8D7SGGT72L*czE3ODMwODc1NDIkbzIkZzEkdDE3ODMwODgzMDQkajQ4JGwwJGgw&tn_session=33dd1dfc07a1d594bc8c666d0eac443919f9be0c~f76571e96a4ad3fe595660d8ad09d3fe971ceb56" class="inline-flex flex-col md:flex-row bg-brand-green text-white font-black text-2xl py-4 px-10 rounded-2xl border-4 border-brand-dark shadow-brutal hover-brutal items-center justify-center gap-3 animate-bounce hover:animate-none">
+            <span>COMPRAR AGORA</span> 
+            <span class="bg-white text-brand-green px-3 py-1 rounded-lg text-lg border-2 border-brand-dark">R$ 145</span>
+        </a>
+        <p class="mt-4 text-gray-500 font-bold">Oferta de R$ 160 por R$ 145. Aproveite!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t-8 border-brand-cyan text-center">
+        <div class="flex items-center justify-center gap-2 mb-4">
+            <i data-lucide="radio" class="text-brand-yellow w-6 h-6"></i>
+            <span class="font-black text-xl tracking-tight uppercase">Pequeno<span class="text-brand-cyan">Inventor</span></span>
+        </div>
+        <p class="text-gray-400 font-bold text-sm">Transformando a curiosidade natural em paixão por aprender.</p>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-xs text-gray-500 font-bold uppercase tracking-wider">
+            &copy; 2026 Pequeno Inventor. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão de Compra Fixo (Apenas Mobile) -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t-4 border-brand-dark p-4 z-50 shadow-[0_-4px_0_0_rgba(27,27,58,1)] flex gap-2">
+        <div class="flex-1 flex flex-col justify-center bg-gray-100 rounded-xl border-2 border-brand-dark px-3">
+            <span class="text-[10px] text-gray-500 font-bold uppercase line-through leading-none mt-1">De R$ 160</span>
+            <span class="text-lg font-black text-brand-dark leading-none pb-1">R$ 145</span>
+        </div>
+        <a href="https://nuvem.com.br/checkout/v3/start/2009333513/4b4170a2d9a771bbe51bc5d45289a77cea70db34?from_store=1&country=BR&internalProviders=true&_gl=1*hl7mnb*_ga*MTU4ODUwODk3MC4xNzgzMDE0MjU0*_ga_8D7SGGT72L*czE3ODMwODc1NDIkbzIkZzEkdDE3ODMwODgzMDQkajQ4JGwwJGgw&tn_session=33dd1dfc07a1d594bc8c666d0eac443919f9be0c~f76571e96a4ad3fe595660d8ad09d3fe971ceb56" class="flex-[2] bg-brand-green text-white font-black text-lg py-3 rounded-xl border-4 border-brand-dark shadow-brutal flex items-center justify-center gap-2 active:translate-y-1 active:translate-x-1 active:shadow-none">
+            GARANTIR O MEU <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+    </div>
+
+    <script>
+        // Iniciar ícones
+        lucide.createIcons();
+    </script>
+</body>
+</html>
