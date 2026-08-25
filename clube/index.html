@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube Pequeno Inventor | Assinatura Trimestral</title>
+    
+    <!-- COLE SEU PIXEL DO FACEBOOK AQUI (Logo acima do /head) -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        display: ['Fredoka', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0052FF',
+                            orange: '#FF5722',
+                            green: '#00C853',
+                            yellow: '#FFD600',
+                            purple: '#8338EC',
+                            rose: '#FF4081',
+                            dark: '#1A1A24',
+                            light: '#F4F7FE'
+                        }
+                    },
+                    boxShadow: {
+                        'brutal': '4px 4px 0px 0px rgba(26, 26, 36, 1)',
+                        'brutal-lg': '8px 8px 0px 0px rgba(26, 26, 36, 1)',
+                        'brutal-hover': '2px 2px 0px 0px rgba(26, 26, 36, 1)',
+                    },
+                    animation: {
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-brutal { transition: all 0.2s ease; }
+        .hover-brutal:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px rgba(26, 26, 36, 1); }
+        .hover-brutal:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px 0px rgba(26, 26, 36, 1); }
+        
+        .bg-polka {
+            background-color: #F4F7FE;
+            background-image: radial-gradient(#CBD5E1 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-polka text-brand-dark font-sans antialiased pb-24 md:pb-0 overflow-x-hidden">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-purple text-white text-xs md:text-sm text-center py-2 px-4 font-bold tracking-wide">
+        🚀 VAGAS LIMITADAS PARA O CLUBE! Garanta 3 meses de desenvolvimento com respaldo médico e pedagógico. 🚀
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white border-b-4 border-brand-dark sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-yellow p-2 rounded-xl border-2 border-brand-dark transform -rotate-3">
+                    <i data-lucide="box" class="text-brand-dark w-6 h-6"></i>
+                </div>
+                <span class="font-display font-bold text-xl md:text-2xl tracking-tight text-brand-blue uppercase">Clube<span class="text-brand-orange">Inventor</span></span>
+            </div>
+            
+            <a href="#comprar" class="bg-brand-green text-white font-black py-2 px-6 rounded-xl border-2 border-brand-dark shadow-brutal hover-brutal flex items-center gap-2">
+                Assinar <span class="hidden md:inline">Clube</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 overflow-hidden relative">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12">
+            
+            <!-- Texto Hero -->
+            <div class="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left relative z-10">
+                <div class="inline-block bg-brand-orange text-white font-black px-4 py-1.5 rounded-full text-sm md:text-base self-center md:self-start border-2 border-brand-dark shadow-[2px_2px_0_0_#1A1A24] transform -rotate-2">
+                    A Jornada de 3 Meses 🗺️
+                </div>
+                
+                <h1 class="font-display text-4xl md:text-6xl font-bold leading-tight text-brand-dark">
+                    Uma Surpresa <span class="text-brand-blue">Educativa</span> Todo Mês na Sua Porta!
+                </h1>
+                
+                <p class="text-lg md:text-xl font-bold text-gray-600">
+                    Transforme o tempo livre em aprendizado prático. Assine o Clube Pequeno Inventor e receba 3 kits de engenharia, brindes exclusivos, videoaulas de física e um <strong class="text-brand-rose">Guia Pedagógico da Dra. Bruna Della Vechia (Pediatra)</strong>!
+                </p>
+
+                <!-- Box de Preço Resumo -->
+                <div class="bg-white p-6 rounded-3xl border-4 border-brand-dark shadow-brutal mt-4 relative">
+                    <div class="absolute -top-5 -right-5 bg-brand-yellow w-16 h-16 rounded-full border-4 border-brand-dark flex items-center justify-center animate-wiggle shadow-brutal">
+                        <i data-lucide="star" class="w-8 h-8 text-brand-dark fill-current"></i>
+                    </div>
+                    
+                    <p class="text-sm text-gray-500 font-bold mb-1 uppercase">Plano Trimestral Fechado:</p>
+                    <div class="flex items-baseline justify-center md:justify-start gap-2 mb-4">
+                        <span class="text-3xl md:text-5xl font-black text-brand-green">R$ 350</span>
+                        <span class="text-lg font-bold text-gray-500">pagamento único</span>
+                    </div>
+                    
+                    <a href="https://www.pequenoinventor.com/cart-link/1583393359-1" class="w-full bg-brand-blue text-white font-black text-xl py-4 rounded-xl border-4 border-brand-dark shadow-brutal hover-brutal text-center flex items-center justify-center gap-2">
+                        GARANTIR MINHA VAGA <i data-lucide="rocket" class="w-6 h-6"></i>
+                    </a>
+                    <p class="text-center text-xs text-gray-500 font-bold mt-3">
+                        <i data-lucide="info" class="inline w-3 h-3"></i> O valor cobre os 3 meses de assinatura.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Imagem Hero (Pilhas de Caixas) -->
+            <div class="w-full md:w-1/2 relative">
+                <div class="absolute inset-0 bg-brand-yellow rounded-[3rem] transform rotate-3 scale-95 border-4 border-brand-dark"></div>
+                <div class="relative z-10 bg-white p-4 rounded-[3rem] border-4 border-brand-dark shadow-brutal-lg flex flex-col items-center justify-center h-[400px] md:h-[500px] bg-[url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')] bg-cover bg-center">
+                    <!-- Overlay para escurecer um pouco a foto -->
+                    <div class="absolute inset-0 bg-brand-blue/20 rounded-[2.5rem]"></div>
+                    
+                    <!-- Badges flutuantes simulando as caixas -->
+                    <div class="absolute bottom-10 left-4 bg-white px-4 py-2 rounded-xl border-4 border-brand-dark shadow-brutal transform -rotate-6 font-black text-brand-orange text-lg flex items-center gap-2">
+                        <i data-lucide="package" class="w-6 h-6"></i> Mês 1
+                    </div>
+                    <div class="absolute bottom-24 left-12 bg-white px-4 py-2 rounded-xl border-4 border-brand-dark shadow-brutal transform rotate-3 font-black text-brand-purple text-lg flex items-center gap-2">
+                        <i data-lucide="package" class="w-6 h-6"></i> Mês 2
+                    </div>
+                    <div class="absolute bottom-40 left-6 bg-white px-4 py-2 rounded-xl border-4 border-brand-dark shadow-brutal transform -rotate-2 font-black text-brand-green text-lg flex items-center gap-2">
+                        <i data-lucide="package" class="w-6 h-6"></i> Mês 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência Completa - Os 5 Pilares (NOVO) -->
+    <section class="py-16 bg-brand-dark text-white border-y-8 border-brand-purple relative overflow-hidden">
+        <!-- Detalhes de fundo -->
+        <i data-lucide="stars" class="absolute top-10 right-10 text-brand-purple/30 w-32 h-32 animate-pulse"></i>
+        
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <h2 class="font-display text-3xl md:text-5xl font-bold text-center uppercase mb-8">Muito mais que um brinquedo 🪄</h2>
+            <p class="text-center text-gray-300 font-bold mb-16 max-w-2xl mx-auto">Cada caixa é um ecossistema de aprendizado. Veja o que acompanha a jornada do seu filho todos os meses:</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                
+                <!-- Benefício 1 -->
+                <div class="bg-brand-light/10 p-6 rounded-3xl border-4 border-brand-purple/30 text-center transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-brand-orange rounded-full border-2 border-brand-dark flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="wrench" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2">Projeto DIY Inédito</h3>
+                        <p class="text-gray-300 font-bold text-sm">Um kit de montar diferente a cada mês, feito em madeira de encaixe e componentes eletrônicos reais.</p>
+                    </div>
+                </div>
+
+                <!-- Benefício 2 -->
+                <div class="bg-brand-light/10 p-6 rounded-3xl border-4 border-brand-purple/30 text-center transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-brand-yellow rounded-full border-2 border-brand-dark flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="gift" class="w-8 h-8 text-brand-dark"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2 text-brand-yellow">Brinde Surpresa</h3>
+                        <p class="text-gray-300 font-bold text-sm">Um item extra, ferramenta ou colecionável para engajar a criança desde a abertura da caixa.</p>
+                    </div>
+                </div>
+
+                <!-- Benefício 3 -->
+                <div class="bg-brand-light/10 p-6 rounded-3xl border-4 border-brand-purple/30 text-center transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-brand-blue rounded-full border-2 border-brand-dark flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="monitor-play" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2 text-brand-blue">Videoaula Exclusiva</h3>
+                        <p class="text-gray-300 font-bold text-sm">Um guia em vídeo super didático ensinando o passo a passo da montagem, ideal para os mais visuais.</p>
+                    </div>
+                </div>
+
+                <!-- Benefício 4 -->
+                <div class="bg-brand-light/10 p-6 rounded-3xl border-4 border-brand-purple/30 text-center transform hover:-translate-y-2 transition-transform duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 bg-brand-green rounded-full border-2 border-brand-dark flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="atom" class="w-8 h-8 text-brand-dark"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2 text-brand-green">Fundamentos da Física</h3>
+                        <p class="text-gray-300 font-bold text-sm">Material de apoio explicando "o porquê das coisas", traduzindo ciência complexa para a linguagem infantil.</p>
+                    </div>
+                </div>
+
+                <!-- Benefício 5 - DESTAQUE PEDAGÓGICO -->
+                <div class="bg-white text-brand-dark p-6 rounded-3xl border-4 border-brand-rose shadow-brutal text-center transform hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+                    <div class="absolute -top-3 -right-3 bg-brand-rose text-white text-[10px] font-black uppercase px-3 py-1 rounded-bl-xl border-2 border-brand-dark">
+                        Especial Pais
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-brand-rose/20 rounded-full border-2 border-brand-rose flex items-center justify-center mx-auto mb-4 text-brand-rose">
+                            <i data-lucide="book-open-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-2 text-brand-rose">Guia Pedagógico</h3>
+                        <p class="text-gray-600 font-bold text-sm leading-snug">
+                            <strong>O mais importante:</strong> Um guia para os pais que esclarece como cada brinquedo estimula e auxilia os <strong>marcos de desenvolvimento</strong> da criança naquela etapa.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- O que eles vão construir (Os 3 Meses) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="bg-brand-green text-white font-black px-4 py-1 rounded-full uppercase text-sm border-2 border-brand-dark shadow-brutal">Nível Progressivo</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-brand-dark mt-6 mb-4">O Plano Trimestral 🚀</h2>
+                <p class="text-xl font-bold text-gray-500 max-w-2xl mx-auto">Descubra os projetos incríveis que selecionamos para desenvolver as habilidades do seu filho nos próximos 90 dias.</p>
+            </div>
+
+            <div class="flex flex-col gap-10">
+                
+                <!-- Mês 1: Carrinho RC -->
+                <div class="bg-brand-light border-4 border-brand-dark rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 shadow-brutal transform hover:-translate-y-1 transition-transform relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-blue text-white w-24 h-24 rounded-bl-full flex items-start justify-end p-4 z-0 opacity-20">
+                        <i data-lucide="radio" class="w-10 h-10"></i>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-white rounded-2xl border-4 border-brand-dark overflow-hidden relative z-10">
+                        <div class="absolute top-0 left-0 bg-brand-blue text-white font-black px-4 py-2 border-r-4 border-b-4 border-brand-dark rounded-br-2xl z-10">MÊS 1</div>
+                        <img src="sg-11134201-22100-cam4qjfi8wiv5b.webp" alt="Carrinho Controle Remoto" class="w-full h-full object-contain p-2" onerror="this.src='https://placehold.co/600x400/0052FF/ffffff?text=Mês+1'">
+                    </div>
+                    
+                    <div class="w-full md:w-2/3 z-10">
+                        <div class="flex items-center gap-2 text-brand-blue font-black uppercase text-sm mb-2"><i data-lucide="zap" class="w-5 h-5"></i> Elétrica e Radiofrequência</div>
+                        <h3 class="font-display text-3xl font-bold text-brand-dark mb-3">Carrinho de Controle Remoto</h3>
+                        <p class="text-gray-600 font-bold mb-4 text-lg">Para começar com força total! No primeiro mês, a criança vai construir do zero o seu próprio veículo e o controle remoto. Uma introdução fascinante aos circuitos, motores e transmissão de sinais sem fio.</p>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="bg-white border-2 border-brand-dark/20 rounded-lg px-3 py-1 text-sm font-bold text-gray-700 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Lógica de Circuitos</li>
+                            <li class="bg-white border-2 border-brand-dark/20 rounded-lg px-3 py-1 text-sm font-bold text-gray-700 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Guia Pedagógico Focado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mês 2: Exploração Lunar Solar -->
+                <div class="bg-brand-light border-4 border-brand-dark rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 shadow-brutal transform hover:-translate-y-1 transition-transform relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-orange text-white w-24 h-24 rounded-bl-full flex items-start justify-end p-4 z-0 opacity-20">
+                        <i data-lucide="sun" class="w-10 h-10"></i>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-white rounded-2xl border-4 border-brand-dark overflow-hidden relative md:order-2 z-10">
+                        <div class="absolute top-0 right-0 bg-brand-orange text-white font-black px-4 py-2 border-l-4 border-b-4 border-brand-dark rounded-bl-2xl z-10">MÊS 2</div>
+                        <img src="9ef9b4a9a573eeb2ee76fd56b7bc94da.webp" alt="Carrinho Exploração Lunar Solar" class="w-full h-full object-contain p-2" onerror="this.src='https://placehold.co/600x400/FF5722/ffffff?text=Mês+2'">
+                    </div>
+                    
+                    <div class="w-full md:w-2/3 md:order-1 z-10 text-left md:text-right flex flex-col md:items-end">
+                        <div class="flex items-center gap-2 text-brand-orange font-black uppercase text-sm mb-2 flex-row-reverse md:flex-row"><i data-lucide="sun" class="w-5 h-5"></i> Energia Sustentável</div>
+                        <h3 class="font-display text-3xl font-bold text-brand-dark mb-3">Jipe de Exploração Lunar Solar</h3>
+                        <p class="text-gray-600 font-bold mb-4 text-lg">No segundo mês, eliminamos as pilhas! Elevamos o nível de dificuldade estrutural para construir um jipe espacial incrível com grandes painéis solares. A criança aprenderá como a luz do sol é convertida em movimento real.</p>
+                        <ul class="flex flex-wrap gap-2 justify-start md:justify-end">
+                            <li class="bg-white border-2 border-brand-dark/20 rounded-lg px-3 py-1 text-sm font-bold text-gray-700 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Energia Renovável</li>
+                            <li class="bg-white border-2 border-brand-dark/20 rounded-lg px-3 py-1 text-sm font-bold text-gray-700 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Marcos de Desenvolvimento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mês 3: Gerador Eletromotriz -->
+                <div class="bg-brand-light border-4 border-brand-dark rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 shadow-brutal transform hover:-translate-y-1 transition-transform relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-yellow text-brand-dark w-24 h-24 rounded-bl-full flex items-start justify-end p-4 z-0 opacity-20">
+                        <i data-lucide="lightbulb" class="w-10 h-10"></i>
+                    </div>
+                    
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-white rounded-2xl border-4 border-brand-dark overflow-hidden relative z-10">
+                        <div class="absolute top-0 left-0 bg-brand-yellow text-brand-dark font-black px-4 py-2 border-r-4 border-b-4 border-brand-dark rounded-br-2xl z-10">MÊS 3</div>
+                        <img src="f490f3645b36490e6c35e91c893fe7da.webp" alt="Gerador Eletromotriz" class="w-full h-full object-contain p-2" onerror="this.src='https://placehold.co/600x400/FFD600/1A1A24?text=Mês+3'">
+                    </div>
+                    
+                    <div class="w-full md:w-2/3 z-10">
+                        <div class="flex items-center gap-2 text-brand-yellow font-black uppercase text-sm mb-2"><i data-lucide="settings" class="w-5 h-5 text-brand-dark"></i> Mecânica e Geração de Força</div>
+                        <h3 class="font-display text-3xl font-bold text-brand-dark mb-3">Gerador Eletromotriz a Manivela</h3>
+                        <p class="text-gray-600 font-bold mb-4 text-lg">Para fechar o trimestre com chave de ouro: criação de energia! A criança constrói um sistema de polias e engrenagens que, ao girar a manivela, gera eletricidade suficiente para acender uma lâmpada. Um verdadeiro projeto de usina em miniatura!</p>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="bg-white border-2 border-brand-dark/20 rounded-lg px-3 py-1 text-sm font-bold text-gray-700 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Relação de Engrenagens</li>
+                            <li class="bg-white border-2 border-brand-dark/20 rounded-lg px-3 py-1 text-sm font-bold text-gray-700 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4 text-brand-green"></i> Habilidades Cognitivas</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta Checkout -->
+    <section id="comprar" class="py-20 bg-brand-blue relative overflow-hidden">
+        <!-- Elementos decorativos -->
+        <i data-lucide="sparkles" class="absolute top-10 left-10 text-white/20 w-32 h-32"></i>
+        <i data-lucide="shapes" class="absolute bottom-10 right-10 text-white/20 w-40 h-40 transform rotate-12"></i>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="bg-white border-4 border-brand-dark rounded-[2.5rem] p-8 md:p-12 shadow-[8px_8px_0_0_#FFD600]">
+                
+                <div class="text-center mb-8 border-b-4 border-gray-100 pb-8">
+                    <div class="inline-block bg-brand-yellow text-brand-dark px-4 py-1 rounded-full font-black text-sm uppercase mb-3 transform -rotate-2 border-2 border-brand-dark">Plano Trimestral</div>
+                    <h2 class="font-display text-3xl lg:text-5xl font-bold text-brand-dark mb-4 uppercase leading-tight">Clube de Assinatura</h2>
+                    <p class="text-gray-500 font-bold text-lg">Gere meses de engajamento produtivo, divertido e cientificamente embasado.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-10 items-center">
+                    
+                    <!-- Resumo do que leva -->
+                    <div class="w-full md:w-1/2">
+                        <h4 class="font-black text-brand-dark text-xl mb-4">O que está incluso:</h4>
+                        <ul class="space-y-4 font-bold text-gray-700 text-lg">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-brand-green/20 p-2 rounded-full border-2 border-brand-green mt-1 shrink-0"><i data-lucide="package" class="w-5 h-5 text-brand-green"></i></div>
+                                <span><strong>3 Kits DIY Inéditos</strong> (Controle Remoto, Solar e Gerador)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-brand-green/20 p-2 rounded-full border-2 border-brand-green mt-1 shrink-0"><i data-lucide="gift" class="w-5 h-5 text-brand-green"></i></div>
+                                <span><strong>3 Brindes Surpresa</strong> (um acompanhando cada caixa)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-brand-green/20 p-2 rounded-full border-2 border-brand-green mt-1 shrink-0"><i data-lucide="play-circle" class="w-5 h-5 text-brand-green"></i></div>
+                                <span><strong>Videoaulas Exclusivas</strong> e material sobre fundamentos da física</span>
+                            </li>
+                            <li class="flex items-start gap-3 bg-brand-rose/10 p-3 rounded-xl border border-brand-rose/30">
+                                <div class="bg-white p-2 rounded-full border-2 border-brand-rose mt-1 shrink-0"><i data-lucide="book-open-check" class="w-5 h-5 text-brand-rose"></i></div>
+                                <span><strong>O Guia Pedagógico:</strong> Aprenda a identificar os marcos de desenvolvimento que a criança atinge a cada montagem.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Caixa de Preço -->
+                    <div class="w-full md:w-1/2 flex flex-col items-center bg-brand-light p-6 rounded-3xl border-4 border-brand-dark">
+                        <p class="text-gray-500 font-bold mb-2 uppercase text-sm text-center">Pagamento Único pelos 3 meses:</p>
+                        <div class="flex items-baseline gap-2 mb-2">
+                            <span class="font-display text-6xl font-black text-brand-dark">R$ 350</span>
+                        </div>
+                        <p class="text-brand-green font-black mb-6 text-sm bg-green-100 px-3 py-1 rounded-full border border-green-300">
+                            Equivale a apenas R$116,66 por mês!
+                        </p>
+                        
+                        <!-- INSTRUÇÃO PARA O USUÁRIO: COLE SEU LINK DO CARRINHO ABAIXO -->
+                        <a href="https://www.pequenoinventor.com/cart-link/1583393359-1" class="w-full bg-brand-orange text-white font-black text-xl py-5 rounded-2xl hover:bg-orange-600 transition-colors shadow-brutal hover-brutal text-center flex items-center justify-center gap-2 transform hover:-rotate-1">
+                            ASSINAR AGORA <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                        </a>
+                        
+                        <p class="text-center text-xs text-gray-500 font-bold mt-4">
+                            🔒 Compra segura. Sem taxas adicionais escondidas.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t-8 border-brand-yellow">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                    <i data-lucide="box" class="text-brand-yellow w-6 h-6"></i>
+                    <span class="font-display font-bold text-2xl tracking-tight uppercase">Clube<span class="text-brand-orange">Inventor</span></span>
+                </div>
+                <p class="text-gray-400 font-bold text-sm max-w-md mx-auto md:mx-0">Criando um hábito mensal de aprendizado e desenvolvimento de habilidades essenciais para o futuro, longe das telas e com acompanhamento pediátrico.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center md:justify-end gap-6 text-sm font-bold text-gray-400">
+                <a href="#" class="hover:text-white transition-colors">Termos do Clube</a>
+                <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a>
+                <a href="#" class="hover:text-white transition-colors">Dúvidas Frequentes</a>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500 font-bold uppercase tracking-wider">
+            &copy; 2026 Pequeno Inventor. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão Fixo Mobile -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t-4 border-brand-dark p-4 shadow-[0_-10px_0_0_rgba(26,26,36,1)] z-50 flex gap-3">
+        <div class="flex-1 flex flex-col justify-center bg-gray-100 rounded-xl border-2 border-brand-dark px-3">
+            <span class="text-[10px] text-gray-500 font-bold uppercase leading-none mt-1">Total (3 Meses)</span>
+            <span class="text-xl font-black text-brand-dark leading-none pb-1">R$ 350</span>
+        </div>
+        <!-- INSTRUÇÃO PARA O USUÁRIO: COLE SEU LINK DO CARRINHO ABAIXO -->
+        <a href="https://www.pequenoinventor.com/cart-link/1583393359-1" class="flex-[2] bg-brand-orange text-white font-black text-lg py-3 rounded-xl border-4 border-brand-dark shadow-brutal flex items-center justify-center gap-1 active:translate-y-1 active:translate-x-1 active:shadow-none">
+            ASSINAR <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
